@@ -1,7 +1,10 @@
 spring:
   application:
     name: AG
-    
+  main:
+    web-application-type: reactive
+    allow-bean-definition-overriding: true
+
   cloud:
     gateway:
       routes:

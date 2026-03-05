@@ -21,4 +21,13 @@ public class quizController {
 	public List<questionset> getAllQuestions() {
 		return qs.getAllQuestions();
 	}
+	@GetMapping("public/health")
+	public String healthCheck() {
+		return "Quiz Service is up and running!";
+	}
+	//generate endpoints for quiz functionalities
+	@GetMapping("public/welcome")
+	public String welcome() {
+		return "Welcome to the Quiz Application!";
+	}
 }
